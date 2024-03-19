@@ -1,26 +1,137 @@
 <!DOCTYPE html>
-<html lang="eng" dir="ltr">
+<html lang="en" dir="ltr" >
     <head>
-        <!-- Used by keyboard -->
+        <!-- Used by the Keyboard-->
         <meta charset="utf-8">
+        <title>exp H P tags</title>
+        <!-- Used by browser or google search-->
+        <meta name="Author" content="Gavin Champ">
+        <meta name="description" content="Promotional site for game">
+        <meta name="keywords" content="C++, Console, Games, Game">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        
+        <!-- ALL THE CSS-->
+        <style>
+            *{
+                box-sizing: border-box;
+                font-family: helvetica, sans-serif;
+            }
+            body{
+                margin:0;
+            }
 
-        <title>Promo Splash Page</title>
+            div { border: thin dotted red;}
+            
+            .header{
+                border: 1px solid rgb(19,0,128);
+                text-align: center;
+                color: white;
+                background-color: black;
+                font-size: 3vw;
 
-        <!-- Used by Browser or Google Search-->
-        <meta name="author" content="Gavin Champ">
-        <meta name="description" content="A website promoting a thing">
-        <meta name="keywords" content="promo, promotion">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Content give value for name or http-equiv attribute, text entry in string or array string -->
+            }
+            .nav{
+                border: 1px solid rgb(19,0,128);
+                float: left;
+                width: 25%;
+            }
+            .aside{
+                border: 1px solid rgb(19,0,128);
+            }
 
+            .main{
+                border: 1px solid rgb(19,0,128);
+            }
+            .footer{
+                border: 1px solid rgb(19,0,128);
+            }
+
+        </style>
+        <!-- Websites load in a specific order. Head, CSS, JS, Body-->
     </head>
     <body>
-        <P>hello world</P>
+        <header class="header">
+            <h1 style="margin-bottom: 1%;">CONSOLE ARCADE</h1>
+            <h6 style="margin-top: 1%;">A collection of console games</h6>
+        </header>
+        <nav class="nav">
+            <h3>NAV, H tags</h3>
+        </nav>
+        <main class="main">
+            <h1>MAIN, H Tags</h1>
+            <h2>H2: text</h2>
+            <h3>H3: text</h3>
+            <h4>H4: text</h4>
+            <h5>H5: text</h5>
+            <h6>H6: text</h6>
+            <h7>H7: This doesnt exist as a real header</h7>
+            <p>Paragraph Tag</p>
+            <p>Paragraphs can include different types of <sup>big</sup> and <sub>small</sub> writing</p>
+            <br>
+            <br>
+            <section class="main">
+                <h2>SECTION, H tags</h2>
+                <h3>subheadings usually end at this size: H3</h3>
+                <p>H2 is the largest, Put antthing in this part P tag</p>
+                <a>This could be a hyperlink if i put a href A tag</a>
+                <article class="main">
+                    <h2>Article, H2 tag</h2>
+                    <h3>H3: Subheading</h3>
+                    <p>Writing only in P tags</p>
+                    <p>Only text goes in here</p>
+                </article>
+            </section>
+            <article class="main">
+                <h2>Article, H2 tag</h2>
+                <h3>H3: Subheading</h3>
+                <p>Writing only in P tags</p>
+                <p>Only text goes in here</p>
+            </article>
+        </main>
+        <aside class="aside">
+            <h2>ASIDE, H Tags</h2>
+            <h2>H2: This is the largest Htag</h2>
+            <h3>H3: text</h3>
+            <h4>H4: text</h4>
+            <h5>H5: text</h5>
+            <h6>H6: text</h6>
+            <p>Paragraph Tag</p>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </aside>
+        <section class="main">
+            <h2>SECTION, H tags</h2>
+            <h3>subheadings usually end at this size: H3</h3>
+            <p>H2 is the largest, Put antthing in this part P tag</p>
+            <a>This could be a hyperlink if i put a href A tag</a>
+            <br>
+        </section>
+        <article class="main">
+            <h2>Article, H2 tag</h2>
+            <h3>H3: Subheading</h3>
+            <p>Writing only in P tags</p>
+            <p>Only text goes in here</p>
+        </article>
+        <footer class="footer">
+            <h1>Footer, H tags</h1>
+            <h1>H1: text</h1>
+            <h2>H2: text</h2>
+            <h3>H3: text</h3>
+            <h4>H4: text</h4>
+            <h5>H5: text</h5>
+            <h6>H6: text</h6>
+            <h7>H7: text</h7>
+            <p>Paragraph Tag</p>
+        </footer>
     </body>
-    <footer>
+    <footer class="footer">
+        <blockquote cite="">
+            <!-- Date Accessed 20240214-->
+        </blockquote>
         <p>
-            <strong>Be nice to people man, like cmon</strong><br>
-            <em>- Me</em>
+            <strong>"Life is like riding a bicycle. To keep your balance, you must keep moving."</strong>
+            <br><em> - Albert Einstein</em>
         </p>
+        <p>&copy Gavin Champ, Powered By GavinEAC in Github</p>
+        <!-- other info possible like num of visitors, contact info, quicklinks-->
     </footer>
 </html>
