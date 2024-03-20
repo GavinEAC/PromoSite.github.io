@@ -16,11 +16,22 @@
                 box-sizing: border-box;
                 font-family: helvetica, sans-serif;
             }
+
             body{
                 margin:0;
             }
 
             div { border: thin dotted red;}
+            
+            ul{
+                list-style-type: none;
+                margin:0;
+                padding:0;
+            }
+
+            p{
+                overflow-wrap: break-word;
+            }
             
             .header{
                 border: 1px solid rgb(19,0,128);
@@ -30,20 +41,42 @@
                 font-size: 3vw;
 
             }
+
             .nav{
                 border: 1px solid rgb(19,0,128);
                 float: left;
                 width: 25%;
-            }
-            .aside{
-                border: 1px solid rgb(19,0,128);
+                font-size: 3vw;
             }
 
+            .nav > ul > li{
+                padding:5%;
+                background-color: #4ceb34;
+            }
+            .nav > ul > li > a{
+                text-decoration:none;
+                text-align: right;
+                color:white
+            }
+                
             .main{
                 border: 1px solid rgb(19,0,128);
+                float: left;
+                width:50%;
+                font-size: 1.5vw;
             }
+            
+            .aside{
+                border: 1px solid rgb(19,0,128);
+                background-color: grey;
+                width:25%;
+                float:left;
+            }
+            
             .footer{
                 border: 1px solid rgb(19,0,128);
+                width:100%;
+                float:left;
             }
 
         </style>
@@ -55,38 +88,25 @@
             <h6 style="margin-top: 1%;">A collection of console games</h6>
         </header>
         <nav class="nav">
-            <h3>NAV, H tags</h3>
+            <ul style="margin: 0;">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ChildPages/Developer.html">Developer</a></li>
+                <li><a href="ChildPages/Features.html">Features</a></li>
+            </ul>
         </nav>
         <main class="main">
-            <h1>MAIN, H Tags</h1>
-            <h2>H2: text</h2>
-            <h3>H3: text</h3>
-            <h4>H4: text</h4>
-            <h5>H5: text</h5>
-            <h6>H6: text</h6>
-            <h7>H7: This doesnt exist as a real header</h7>
-            <p>Paragraph Tag</p>
-            <p>Paragraphs can include different types of <sup>big</sup> and <sub>small</sub> writing</p>
-            <br>
-            <br>
-            <section class="main">
-                <h2>SECTION, H tags</h2>
-                <h3>subheadings usually end at this size: H3</h3>
-                <p>H2 is the largest, Put antthing in this part P tag</p>
-                <a>This could be a hyperlink if i put a href A tag</a>
-                <article class="main">
-                    <h2>Article, H2 tag</h2>
-                    <h3>H3: Subheading</h3>
-                    <p>Writing only in P tags</p>
-                    <p>Only text goes in here</p>
-                </article>
-            </section>
-            <article class="main">
-                <h2>Article, H2 tag</h2>
-                <h3>H3: Subheading</h3>
-                <p>Writing only in P tags</p>
-                <p>Only text goes in here</p>
-            </article>
+            <h1>What Exactly Is This?</h1>
+            <p>
+                ____Console Arcade, is the new, not so exciting amalgamation of command window 
+                games that you can download and play for <strong>FREE</strong>.
+            </p>
+            <p>
+                ____Currently, The Console Arcade consists of one very simple game. This is
+                because I am new to C++. However, as new games are created I will add them as an
+                option to download. Possibly as a header file to add to a folder of games on a 
+                main c++ file. I'm not sure yet, because I barely understand any of that stuff.
+            </p>
+
         </main>
         <aside class="aside">
             <h2>ASIDE, H Tags</h2>
@@ -96,21 +116,7 @@
             <h5>H5: text</h5>
             <h6>H6: text</h6>
             <p>Paragraph Tag</p>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         </aside>
-        <section class="main">
-            <h2>SECTION, H tags</h2>
-            <h3>subheadings usually end at this size: H3</h3>
-            <p>H2 is the largest, Put antthing in this part P tag</p>
-            <a>This could be a hyperlink if i put a href A tag</a>
-            <br>
-        </section>
-        <article class="main">
-            <h2>Article, H2 tag</h2>
-            <h3>H3: Subheading</h3>
-            <p>Writing only in P tags</p>
-            <p>Only text goes in here</p>
-        </article>
         <footer class="footer">
             <h1>Footer, H tags</h1>
             <h1>H1: text</h1>
