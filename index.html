@@ -99,6 +99,8 @@
                 border: 1px solid rgb(19,0,128);
                 width:100%;
                 float:left;
+                color: white;
+                background-color: black;
             }
         </style>
 
@@ -139,7 +141,7 @@
 
         
         </main>
-        <aside class="aside">
+        <aside class="aside" id="aside">
             <h2>ASIDE, H Tags</h2>
             <h2>H2: This is the largest Htag</h2>
             <h3>H3: text</h3>
@@ -148,10 +150,6 @@
             <h6>H6: text</h6>
             <p>Paragraph Tag</p>
         </aside>
-        <footer class="footer">
-            <h1>Footer, H tags</h1>
-            <p>Paragraph Tag</p>
-        </footer>
     </body>
     <footer class="footer">
         <blockquote cite="">
@@ -161,7 +159,10 @@
             <strong>"Life is like riding a bicycle. To keep your balance, you must keep moving."</strong>
             <br><em> - Albert Einstein</em>
         </p>
-        <p>&copy Gavin Champ, Powered By GavinEAC in Github</p>
+        <p>
+            &copy Gavin Champ, Powered By GavinEAC in Github<br>
+            champ.gec@gmail.com
+        </p>
         <!-- other info possible like num of visitors, contact info, quicklinks-->
     </footer>
     <script>
@@ -169,6 +170,7 @@
             const element = document.getElementById("main_column");
             let main_height = element.scrollHeight;
             document.getElementById("nav").style.height = `${main_height + 2}px`;
+            document.getElementById("aside").style.height = `${main_height + 2}px`;
          }, 100)
     </script>
 </html>
