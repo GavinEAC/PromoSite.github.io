@@ -3,7 +3,7 @@
     <head>
         <!-- Used by the Keyboard-->
         <meta charset="utf-8">
-        <title>exp H P tags</title>
+        <title>Console Arcade</title>
         <!-- Used by browser or google search-->
         <meta name="Author" content="Gavin Champ">
         <meta name="description" content="Promotional site for game">
@@ -47,6 +47,7 @@
                 color: white;
                 background-color: black;
                 font-size: 3vw;
+                font: pixelfy sans;
 
             }
 
@@ -69,6 +70,12 @@
                 text-align: left;
                 color:white
             }
+
+            .nav > ul > a > li:hover{
+                background-color: #35a324;
+            }
+
+
             .nav > ul > a{
                 text-decoration:none;
             }
@@ -93,11 +100,6 @@
                 width:100%;
                 float:left;
             }
-
-            .main_columns_div{
-                background-color: #a8d6a1;
-                height: 100px;
-            }
         </style>
 
         <!-- Websites load in a specific order. Head, CSS, JS, Body-->
@@ -107,44 +109,45 @@
             <h1 style="margin-bottom: 1%;">CONSOLE ARCADE</h1>
             <h6 style="margin-top: 1%;">A collection of console games</h6>
         </header>
-        <div class="main_columns_div">
-            <nav class="nav">
-                <ul style="margin: 0;">
-                    <a href="index.html"><li id="nav_current_page">Home</li></a>
-                    <a href="ChildPages/Developer.html"><li>Developer</li></a>
-                    <a href="ChildPages/Features.html"><li>Features</li></a>
-                    <a href="ChildPages/Downloads.html"><li>Downloads</li></a>
-                </ul>
-            </nav>
-            <main class="main">
-                <h1>What Exactly Is This?</h1>
-                <p>
-                    ____Console Arcade, is the new, not so exciting amalgamation of command window 
-                    games that you can download and play for <strong>FREE</strong>.
-                </p>
-                <p>
-                    ____Currently, The Console Arcade consists of one very simple game. This is
+        <nav class="nav" id="nav">
+            <ul style="margin: 0;">
+                <a href="index.html"><li id="nav_current_page">Home</li></a>
+                <a href="ChildPages/Developer.html"><li>Developer</li></a>
+                <a href="ChildPages/Features.html"><li>Features</li></a>
+                <a href="ChildPages/Downloads.html"><li>Downloads</li></a>
+            </ul>
+        </nav>
+        <main class="main" id="main_column">
+            <h1>What Exactly Is This?</h1>
+            <p>
+                ____Console Arcade, is the new, not so exciting amalgamation of command window 
+                games that you can download and play for <strong>FREE</strong>.
+            </p>
+            <p>
+                ____Currently, The Console Arcade consists of one very simple game. This is
                     because I am new to C++. However, as new games are created I will add them as an
                     option to download. Possibly as a header file to add to a folder of games on a 
                     main c++ file. I'm not sure yet, because I barely understand any of that stuff.
-                </p>
+            </p>
 
-                <h1>It's Open Source!</h1>
-                <p>
-                    ____All the games will be available to download as .EXE, but there will also be a choice of downloading the source code of each game.
-                </p>
+            <h1>It's Open Source!</h1>
+            <p>
+                ____All the games will be available to download as .EXE, but there will
+                    also be a choice of downloading the source code of each game.
+            </p>
+        
 
-            </main>
-            <aside class="aside">
-                <h2>ASIDE, H Tags</h2>
-                <h2>H2: This is the largest Htag</h2>
-                <h3>H3: text</h3>
-                <h4>H4: text</h4>
-                <h5>H5: text</h5>
-                <h6>H6: text</h6>
-                <p>Paragraph Tag</p>
-            </aside>
-        </div>
+        
+        </main>
+        <aside class="aside">
+            <h2>ASIDE, H Tags</h2>
+            <h2>H2: This is the largest Htag</h2>
+            <h3>H3: text</h3>
+            <h4>H4: text</h4>
+            <h5>H5: text</h5>
+            <h6>H6: text</h6>
+            <p>Paragraph Tag</p>
+        </aside>
         <footer class="footer">
             <h1>Footer, H tags</h1>
             <p>Paragraph Tag</p>
@@ -161,4 +164,11 @@
         <p>&copy Gavin Champ, Powered By GavinEAC in Github</p>
         <!-- other info possible like num of visitors, contact info, quicklinks-->
     </footer>
+    <script>
+        setTimeout(() => {
+            const element = document.getElementById("main_column");
+            let main_height = element.scrollHeight;
+            document.getElementById("nav").style.height = `${main_height + 2}px`;
+         }, 100)
+    </script>
 </html>

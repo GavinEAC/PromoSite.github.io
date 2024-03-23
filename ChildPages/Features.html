@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" >
+    <head>
+        <!-- Used by the Keyboard-->
+        <meta charset="utf-8">
+        <title>Console Arcade/Features</title>
+        <!-- Used by browser or google search-->
+        <meta name="Author" content="Gavin Champ">
+        <meta name="description" content="Promotional site for game">
+        <meta name="keywords" content="C++, Console, Games, Game">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        
+
+        <!-- ALL THE CSS-->
+        <style>
+            *{
+                box-sizing: border-box;
+                font-family: helvetica, sans-serif;
+            }
+
+            body{
+                margin:0;
+            }
+
+            div { border: thin dotted red;}
+            
+            ul{
+                list-style-type: none;
+                margin:0;
+                padding:0;
+            }
+
+            p{
+                overflow-wrap: break-word;
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+
+            h1{
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+            
+            .header{
+                border: 1px solid rgb(19,0,128);
+                text-align: center;
+                color: white;
+                background-color: black;
+                font-size: 3vw;
+
+            }
+
+            .nav{
+                border: 1px solid rgb(19,0,128);
+                float: left;
+                width: 12.5%;
+                font-size: 2vw;
+                background-color: #a8d6a1;
+            }
+
+            #nav_current_page{
+                background-color: #35a324;
+            }
+
+            .nav > ul > a > li{
+                padding:5%;
+                background-color: #4ceb34;
+                text-decoration:none;
+                text-align: left;
+                color:white
+            }
+
+            .nav > ul > a > li:hover{
+                background-color: #35a324;
+            }
+
+
+            .nav > ul > a{
+                text-decoration:none;
+            }
+                
+            .main{
+                border: 1px solid rgb(19,0,128);
+                float: left;
+                width:75%;
+                font-size: 1.5vw;
+            }   
+            
+            .aside{
+                border: 1px solid rgb(19,0,128);
+                background-color: grey;
+                width:12.5%;
+                float:left;
+                font-size: 1.5vw;
+            }
+            
+            .footer{
+                border: 1px solid rgb(19,0,128);
+                width:100%;
+                float:left;
+            }
+        </style>
+
+        <!-- Websites load in a specific order. Head, CSS, JS, Body-->
+    </head>
+    <body>
+        <header class="header">
+            <h1>Features</h1>
+        </header>
+        <nav class="nav" id="nav">
+            <ul style="margin: 0;">
+                <a href="../index.html"><li>Home</li></a>
+                <a href="Developer.html"><li>Developer</li></a>
+                <a href="Features.html"><li id="nav_current_page">Features</li></a>
+                <a href="Downloads.html"><li>Downloads</li></a>
+            </ul>
+        </nav>
+        <main class="main" id="main_column">
+            <h1>What Exactly Is This?</h1>
+            <p>
+                ____Console Arcade, is the new, not so exciting amalgamation of command window 
+                games that you can download and play for <strong>FREE</strong>.
+            </p>
+            <p>
+                ____Currently, The Console Arcade consists of one very simple game. This is
+                    because I am new to C++. However, as new games are created I will add them as an
+                    option to download. Possibly as a header file to add to a folder of games on a 
+                    main c++ file. I'm not sure yet, because I barely understand any of that stuff.
+            </p>
+
+            <h1>It's Open Source!</h1>
+            <p>
+                ____All the games will be available to download as .EXE, but there will
+                    also be a choice of downloading the source code of each game.
+            </p>
+        
+        </main>
+        <aside class="aside">
+            <h2>ASIDE, H Tags</h2>
+            <h2>H2: This is the largest Htag</h2>
+            <h3>H3: text</h3>
+            <h4>H4: text</h4>
+            <h5>H5: text</h5>
+            <h6>H6: text</h6>
+            <p>Paragraph Tag</p>
+        </aside>
+        <footer class="footer">
+            <h1>Footer, H tags</h1>
+            <p>Paragraph Tag</p>
+        </footer>
+    </body>
+    <footer class="footer">
+        <blockquote cite="">
+            <!-- Date Accessed 20240214-->
+        </blockquote>
+        <p>
+            <strong>"Life is like riding a bicycle. To keep your balance, you must keep moving."</strong>
+            <br><em> - Albert Einstein</em>
+        </p>
+        <p>&copy Gavin Champ, Powered By GavinEAC in Github</p>
+        <!-- other info possible like num of visitors, contact info, quicklinks-->
+    </footer>
+    <script>
+        setTimeout(() => {
+            const element = document.getElementById("main_column");
+            let main_height = element.scrollHeight;
+            document.getElementById("nav").style.height = `${main_height + 2}px`;
+         }, 100)
+    </script>
+</html>
