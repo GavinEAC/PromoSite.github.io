@@ -133,9 +133,14 @@
                 ____All the games will be available to download as .EXE, but there will
                     also be a choice of downloading the source code of each game.
             </p>
+
+            <a href="..\Games\Number_Guessing" download>download</a>
+            <form method="get" action="..\Games\Number_Guessing">
+                <button type="submit">Download</button>
+            </form>
         
         </main>
-        <aside class="aside">
+        <aside class="aside" id="aside">
             <h2>ASIDE, H Tags</h2>
             <h2>H2: This is the largest Htag</h2>
             <h3>H3: text</h3>
@@ -165,6 +170,7 @@
             const element = document.getElementById("main_column");
             let main_height = element.scrollHeight;
             document.getElementById("nav").style.height = `${main_height + 2}px`;
+            document.getElementById("aside").style.height = `${main_height + 2}px`;
          }, 100)
     </script>
 </html>
