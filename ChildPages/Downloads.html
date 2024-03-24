@@ -21,8 +21,6 @@
             body{
                 margin:0;
             }
-
-            div { border: thin dotted red;}
             
             ul{
                 list-style-type: none;
@@ -42,7 +40,7 @@
             }
             
             .header{
-                border: 1px solid rgb(19,0,128);
+                padding: 1px;
                 text-align: center;
                 color: white;
                 background-color: black;
@@ -51,7 +49,7 @@
             }
 
             .nav{
-                border: 1px solid rgb(19,0,128);
+                border-right: 5px solid #26751a;
                 float: left;
                 width: 12.5%;
                 font-size: 2vw;
@@ -80,12 +78,12 @@
             }
                 
             .main{
-                border: 1px solid rgb(19,0,128);
                 float: left;
-                width:75%;
+                width:87.5%;
                 font-size: 1.5vw;
             }   
             
+            /*Only here if I decide to add aside later */
             .aside{
                 border: 1px solid rgb(19,0,128);
                 background-color: grey;
@@ -95,9 +93,43 @@
             }
             
             .footer{
-                border: 1px solid rgb(19,0,128);
                 width:100%;
                 float:left;
+            }
+
+            .outer_footer{
+                color: white;
+                background-color: black;
+                padding: 1%;
+                width:100%;
+                float:left;
+            }
+
+            .download_div{
+                margin:5%;
+                background-color: #4ceb34;
+                border-radius: 25px;
+                color:white;
+                padding-top: 1px;
+                padding-bottom: 1px;
+            }
+
+            .download_div >  h1{
+                margin-bottom: 0;
+            }
+
+            .download_div > p{
+                margin-top: 1%;
+            }
+
+            .download_div > div{
+                margin:2%;
+                background-color: #35a324;
+                margin-left: 5%;
+                margin-right: 5%;
+                width:20%;
+                padding: 1%;
+                border-radius: 5px;
             }
         </style>
 
@@ -116,45 +148,30 @@
             </ul>
         </nav>
         <main class="main" id="main_column">
-            <h1>What Exactly Is This?</h1>
+            <h1>Game Downloads</h1>
             <p>
-                ____Console Arcade, is the new, not so exciting amalgamation of command window 
-                games that you can download and play for <strong>FREE</strong>.
+                ____The upper button will download the executable of the selected game. The 
+                    second button will download a folder containing the executable, as well as
+                    the source code for the game.
             </p>
-            <p>
-                ____Currently, The Console Arcade consists of one very simple game. This is
-                    because I am new to C++. However, as new games are created I will add them as an
-                    option to download. Possibly as a header file to add to a folder of games on a 
-                    main c++ file. I'm not sure yet, because I barely understand any of that stuff.
-            </p>
-
-            <h1>It's Open Source!</h1>
-            <p>
-                ____All the games will be available to download as .EXE, but there will
-                    also be a choice of downloading the source code of each game.
-            </p>
-
-            <a href="Number_Game.exe" download>download</a>
-            <form method="get" action="..\Games\Number_Guessing">
-                <button type="submit">Download</button>
-            </form>
+            <div class="download_div">
+                <h1>Number Guessing Game</h1>
+                <p>
+                    ____A simple game, where a random number is selected and you must guess it.
+                    Then you will be told if your guess is too high or low.
+                </p>
+                <div>
+                    <a>Download .Exe</a>
+                </div>
+                <div>
+                    <a>Download Source</a>
+                </div>
+            </div>
+            
         
         </main>
-        <aside class="aside" id="aside">
-            <h2>ASIDE, H Tags</h2>
-            <h2>H2: This is the largest Htag</h2>
-            <h3>H3: text</h3>
-            <h4>H4: text</h4>
-            <h5>H5: text</h5>
-            <h6>H6: text</h6>
-            <p>Paragraph Tag</p>
-        </aside>
-        <footer class="footer">
-            <h1>Footer, H tags</h1>
-            <p>Paragraph Tag</p>
-        </footer>
     </body>
-    <footer class="footer">
+    <footer class="outer_footer">
         <blockquote cite="">
             <!-- Date Accessed 20240214-->
         </blockquote>
@@ -162,15 +179,18 @@
             <strong>"Life is like riding a bicycle. To keep your balance, you must keep moving."</strong>
             <br><em> - Albert Einstein</em>
         </p>
-        <p>&copy Gavin Champ, Powered By GavinEAC in Github</p>
+        <p>
+            &copy Gavin Champ, Powered By GavinEAC in Github<br>
+            champ.gec@gmail.com
+        </p>
         <!-- other info possible like num of visitors, contact info, quicklinks-->
     </footer>
     <script>
         setTimeout(() => {
             const element = document.getElementById("main_column");
             let main_height = element.scrollHeight;
-            document.getElementById("nav").style.height = `${main_height + 2}px`;
-            document.getElementById("aside").style.height = `${main_height + 2}px`;
+            document.getElementById("nav").style.height = `${main_height + 1}px`;
+            document.getElementById("aside").style.height = `${main_height + 1}px`;
          }, 100)
     </script>
 </html>
