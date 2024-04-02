@@ -101,6 +101,13 @@
                 width:100%;
                 float:left;
             }
+
+            .outer_footer{
+                background-color: black;
+                color: white;
+                width:100%;
+                float:left;
+            }
         </style>
 
         <!-- Websites load in a specific order. Head, CSS, JS, Body-->
@@ -125,7 +132,7 @@
                 save your best score and display it each time you launch the game. Giving you a fleeting and
                 hollow sense of acomplishment
             </p>
-            <h3>Other cool feature:</h3>
+            <h3 style="margin-bottom: 0;">Other cool feature:</h3>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae neque hendrerit, 
                 rutrum leo eu, elementum velit. Suspendisse dictum magna sit amet tempus iaculis. Aliquam 
@@ -138,21 +145,15 @@
             
         
         </main>
-        <aside class="aside">
+        <aside class="aside" id="aside">
             <h2>ASIDE, H Tags</h2>
             <h2>H2: This is the largest Htag</h2>
             <h3>H3: text</h3>
             <h4>H4: text</h4>
             <h5>H5: text</h5>
-            <h6>H6: text</h6>
-            <p>Paragraph Tag</p>
         </aside>
-        <footer class="footer">
-            <h1>Footer, H tags</h1>
-            <p>Paragraph Tag</p>
-        </footer>
     </body>
-    <footer class="footer">
+    <footer class="outer_footer">
         <blockquote cite="">
             <!-- Date Accessed 20240214-->
         </blockquote>
@@ -168,6 +169,7 @@
             const element = document.getElementById("main_column");
             let main_height = element.scrollHeight;
             document.getElementById("nav").style.height = `${main_height + 1.5}px`;
+            document.getElementById("aside").style.height = `${main_height + 1.5}px`;
          }, 100)
     </script>
 </html>
